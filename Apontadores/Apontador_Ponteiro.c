@@ -1,0 +1,38 @@
+/*		Apontador ou ponteiro
+	Um apontador é um tipo especial de variável porque armazena "um endereço de memória".
+	Para declarar um apontador usamos um asterisco antes do nome da variável. 
+
+Exemplo: int *apt;
+
+	cria um apontador para o tipo inteiro chamado apt.
+	Para um apontador receber um endereço de uma variável usamos o "E" comercial = &.
+
+
+Exemplo: | int num, *apt; neste caso o apontador
+	 	 | apt = &num;		
+
+
+	apt recebeu o endereço de num.
+
+	Para ler ou gravar um valor NO ENDEREÇO guardado por um apontador usamos também o asterisco.
+
+Exemplo: | int * apt, num = 7;
+	 | apt = &num;
+	 | printf("%i\n", *apt);
+
+	
+	Então: | & = o endereço de
+	       | * = no endereço
+	       */
+	       
+	       
+	       // EXEMPLOOOOOOOOO
+	       
+	       #include<stdio.h>
+	       int main(void)
+	       {
+	       	int num = 3, *apt;
+	       	apt = &num;
+	       	printf("%i\n", *apt);
+	       	return 0;
+		   }

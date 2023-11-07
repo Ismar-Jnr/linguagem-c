@@ -1,0 +1,21 @@
+// Existem dois tipos de parametros: Valor e Referência
+// -----> Parametro passado por valor é copiado para dentro da funçõa e
+//quando a função altera o valor do parametro o valor original tambem é alterado na função principal
+
+// -----> Parametro passado por Referência é apenas indicado para a função. Existe uma ligação, um tipo
+// de referência entre o parametro e a variavel original. Assim, quando a função altera o valor do parametro
+// ele tambem é alterado na funçao principal.
+// EXEMPLOOOO
+
+#include<stdio.h>
+void limpar(int * parm)
+{
+	* parm =0;
+}
+
+int main(void)
+{
+	int num = 3;
+	limpar(&num);
+	return 0;
+}
